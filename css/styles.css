@@ -479,6 +479,7 @@ flex-direction: column;
 .social-container{
     display: flex;
     flex-direction: column;
+    margin-right: 80px;
 }
 
 .margins{
@@ -558,6 +559,7 @@ flex-direction: column;
 .subscribe-field{
     display: flex;
     align-content: right;
+    flex-direction: column;
 }
 
 .subscribe-txt{
@@ -567,12 +569,19 @@ flex-direction: column;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
+    
+    
 }
 
 .subscribe-form{
     display: flex;
     gap: 24px;
 }
+
+.subscribe-label{
+    display: block;
+}
+
 
 .subscribe-input{
     width: 264px;
@@ -590,7 +599,7 @@ flex-direction: column;
 }
 
 .subscribe-input::placeholder{
-    color #ffffff;
+    color: #ffffff;
 }
 
 .subscribe-button{
@@ -610,6 +619,13 @@ flex-direction: column;
     border: none;
     border-radius: 4px;
 }
+
+.subscribe-button:hover,
+.subscribe-button:focus{
+    background: #404bbf;
+    border: none;
+}
+  
 
 .subscribe-icon{
     margin-left: 16px;
@@ -634,6 +650,8 @@ flex-direction: column;
 .backdrop.is-open{
     opacity: 1;
     visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal{
@@ -652,6 +670,7 @@ flex-direction: column;
     padding-bottom: 24px;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-butt{
@@ -856,4 +875,5 @@ flex-direction: column;
 .button-send:hover,
 .button-send:focus {
     background: #404bbf;
+    border: none;
 }
