@@ -777,6 +777,10 @@ flex-direction: column;
     margin-bottom: 8px;
 }
 
+.form-comment{
+    margin-bottom: 16px;
+}
+
 .form-mess{
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
